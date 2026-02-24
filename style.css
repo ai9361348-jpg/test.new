@@ -32,6 +32,10 @@ a{
 /* ========== Banner part======= */
 #Banner {
     padding: 190px;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
 }
 #Banner h1{
     font-size: 76px;
@@ -57,7 +61,7 @@ a{
 /* =====Featured part===== */
 #Featured{
      padding: 100px;
-    background: s;
+    background: rgba(245, 222, 179, 0.248);
     
      
 }
@@ -65,8 +69,28 @@ a{
     display: flex;
     gap: 24px;
     margin-top: 36px;
-    
-
+    flex-wrap: wrap;
+}
+.price .card-1{
+    border: 1px solid rgba(0, 0, 0, 0.329) ;
+    border-radius: 20px;
+}
+.price .card-1 img{
+    width: 100%;
+}
+.price .card-2 img{
+    width: 100%;
+}
+.price .card-3 img{
+    width: 100%;
+}
+.price .card-2{
+    border: 1px solid rgba(0, 0, 0, 0.329) ;
+    border-radius: 20px;
+}
+.price .card-3{
+    border: 1px solid rgba(0, 0, 0, 0.329) ;
+    border-radius: 20px;
 }
 .price h3 {
     margin-top: 10px;
@@ -81,7 +105,7 @@ a{
 }
 /* ========= trends parts =====*/
 #trend{
-    padding: 160px;
+    padding: 80px 50px;
     
 }
 #trend h3{
@@ -99,12 +123,11 @@ a{
 
 /* ============ Story =========== */
 #story{
-    padding: 350px;
-    background: rgba(192, 192, 192, 0.433);
-    
+    padding: 80px 50px;
+    background: rgba(245, 222, 179, 0.163);
 }
 .story_heading{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .story_heading h2{
     font-size: 36px;
@@ -118,11 +141,11 @@ a{
 
 /* ====== Craft======= */
 #carft{
-    padding: 150px;
+    padding: 80px 50px;
 }
 .craft_heading {
-    padding-left: 60px;
-    margin-top: 170px;
+    padding-left: 40px;
+    margin-top: 100px;
 }
 .craft_heading h2{
     font-size: 48px;
@@ -137,8 +160,8 @@ a{
 /* ======= Picture ========= */
 
 #picture{
-    padding: 124px;
-    background: rgba(192, 192, 192, 0.184);
+    padding: 80px 50px;
+    background: rgba(245, 222, 179, 0.214);
 }
 .picture_heading h2{
     font-size: 36px;
@@ -149,18 +172,22 @@ a{
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    flex-wrap: wrap;
 }
 /* ===== Footer====== */
 #Dark{
-    padding: 100px;
+    padding: 60px 50px;
     background: black;
 
     
 }
+
 .dark_img{
     padding: 55px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .dark_heading h2{
     color: white;
@@ -173,7 +200,7 @@ a{
 }
 .private{
     text-align: center;
-    padding: 210px;
+    padding: 80px 20px;
 }
 .private h2 {
     color: white;
@@ -214,6 +241,13 @@ a{
     cursor:pointer;
     background:#d9d9d9;
     transition:0.3s;
+}
+
+.studio{
+    color: white;
+    text-align: center;
+    
+
 }
 
 .studio{

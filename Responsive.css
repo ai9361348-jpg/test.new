@@ -1,0 +1,468 @@
+/* ============================================
+   RESPONSIVE DESIGN - All Devices
+   ============================================ */
+
+/* ====== MOBILE PHONES (Extra Small) ====== */
+@media (max-width: 576px) {
+    
+    /* Navbar */
+    #main_menu ul {
+        gap: 15px !important;
+    }
+    
+    #main_menu ul li a {
+        font-size: 14px !important;
+    }
+    
+    /* Banner Section */
+    #Banner {
+        padding: 80px 20px !important;
+    }
+    
+    #Banner h1 {
+        font-size: 32px !important;
+        width: 100% !important;
+        line-height: 1.3;
+    }
+    
+    #Banner p {
+        font-size: 16px !important;
+    }
+    
+    #Banner a {
+        font-size: 14px;
+        padding: 8px 16px !important;
+    }
+    
+    /* Featured Section */
+    #Featured {
+        padding: 40px 20px !important;
+    }
+    
+    #Featured h2 {
+        font-size: 28px;
+    }
+    
+    .price {
+        display: flex;
+        flex-direction: column;
+        gap: 20px !important;
+        margin-top: 20px !important;
+    }
+    
+    .price .col-lg-4 {
+        width: 100% !important;
+    }
+    
+    .price h3 {
+        font-size: 18px !important;
+    }
+    
+    .price p {
+        font-size: 16px !important;
+    }
+    
+    /* Trend Section */
+    #trend {
+        padding: 30px 20px !important;
+    }
+    
+    #trend h3 {
+        font-size: 20px !important;
+    }
+    
+    #trend p {
+        font-size: 14px !important;
+    }
+    
+    #trend .col-lg-4 {
+        margin-bottom: 20px;
+    }
+    
+    /* Story Section */
+    #story {
+        padding: 40px 20px !important;
+    }
+    
+    .story_heading {
+        margin-top: 0 !important;
+    }
+    
+    .story_heading h2 {
+        font-size: 24px !important;
+    }
+    
+    .story_heading p {
+        width: 100% !important;
+        font-size: 14px !important;
+    }
+    
+    #story .col-lg-7,
+    #story .col-lg-5 {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+    #story img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Craft Section */
+    #carft {
+        padding: 40px 20px !important;
+    }
+    
+    .craft_heading {
+        padding-left: 0 !important;
+        margin-top: 20px !important;
+    }
+    
+    .craft_heading h2 {
+        font-size: 24px !important;
+    }
+    
+    .craft_heading p {
+        font-size: 14px !important;
+    }
+    
+    .craft_heading .craft_p {
+        width: 100% !important;
+    }
+    
+    #carft .col-lg-5,
+    #carft .col-lg-7 {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
+    #carft img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Picture/Lookbook Section */
+    #picture {
+        padding: 40px 20px !important;
+    }
+    
+    .picture_heading h2 {
+        font-size: 24px !important;
+    }
+    
+    .picture_img {
+        padding: 20px 0 !important;
+        display: flex !important;
+        flex-direction: column;
+        gap: 15px !important;
+    }
+    
+    .picture_img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Dark/Footer Section */
+    #Dark {
+        padding: 40px 20px !important;
+    }
+    
+    .dark_heading h2 {
+        font-size: 24px !important;
+    }
+    
+    .dark_heading p {
+        font-size: 14px !important;
+    }
+    
+    .dark_img {
+        padding: 30px 0 !important;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .dark_img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .private {
+        padding: 40px 20px !important;
+        text-align: center;
+    }
+    
+    .private h2 {
+        font-size: 24px !important;
+    }
+    
+    .private p {
+        font-size: 14px !important;
+    }
+    
+    .address {
+        flex-direction: column;
+        width: 100% !important;
+        max-width: 100%;
+    }
+    
+    .address button {
+        width: 100%;
+    }
+    
+    .studio {
+        font-size: 12px;
+    }
+    
+}
+
+/* ====== TABLETS (Small to Medium) ====== */
+@media (min-width: 577px) and (max-width: 992px) {
+    
+    /* Navbar */
+    #main_menu ul {
+        gap: 30px !important;
+    }
+    
+    #main_menu ul li a {
+        font-size: 16px !important;
+    }
+    
+    /* Banner Section */
+    #Banner {
+        padding: 120px 30px !important;
+    }
+    
+    #Banner h1 {
+        font-size: 48px !important;
+        width: 100% !important;
+        line-height: 1.4;
+    }
+    
+    #Banner p {
+        font-size: 18px !important;
+    }
+    
+    /* Featured Section */
+    #Featured {
+        padding: 60px 30px !important;
+    }
+    
+    .price {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px !important;
+    }
+    
+    .price .col-lg-4 {
+        grid-column: span 1;
+    }
+    
+    .price .col-lg-4:nth-child(3) {
+        grid-column: span 2;
+    }
+    
+    .price h3 {
+        font-size: 20px !important;
+    }
+    
+    /* Trend Section */
+    #trend {
+        padding: 50px 30px !important;
+    }
+    
+    #trend h3 {
+        font-size: 24px !important;
+    }
+    
+    #trend .col-lg-4 {
+        margin-bottom: 20px;
+    }
+    
+    /* Story Section */
+    #story {
+        padding: 80px 30px !important;
+    }
+    
+    .story_heading {
+        margin-top: 50px !important;
+    }
+    
+    .story_heading h2 {
+        font-size: 32px !important;
+    }
+    
+    .story_heading p {
+        width: 100% !important;
+        font-size: 16px !important;
+    }
+    
+    /* Craft Section */
+    #carft {
+        padding: 80px 30px !important;
+    }
+    
+    .craft_heading {
+        padding-left: 30px !important;
+        margin-top: 50px !important;
+    }
+    
+    .craft_heading h2 {
+        font-size: 36px !important;
+    }
+    
+    .craft_heading .craft_p {
+        width: 100% !important;
+        font-size: 18px !important;
+    }
+    
+    /* Picture/Lookbook Section */
+    #picture {
+        padding: 80px 30px !important;
+    }
+    
+    .picture_heading h2 {
+        font-size: 32px !important;
+    }
+    
+    .picture_img {
+        padding: 40px 0 !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px !important;
+    }
+    
+    .picture_img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Dark/Footer Section */
+    #Dark {
+        padding: 60px 30px !important;
+    }
+    
+    .dark_heading h2 {
+        font-size: 32px !important;
+    }
+    
+    .dark_img {
+        padding: 40px 0 !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .dark_img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .private {
+        padding: 80px 30px !important;
+    }
+    
+    .private h2 {
+        font-size: 28px !important;
+    }
+    
+    .address {
+        width: 600px;
+        max-width: 90%;
+    }
+    
+}
+
+/* ====== LARGE DEVICES (Desktop & Large Screens) ====== */
+@media (min-width: 993px) {
+    
+    /* Keep existing styles for large screens */
+    .price {
+        display: flex;
+    }
+    
+    .price .col-lg-4 {
+        flex: 1;
+    }
+    
+    .picture_img {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    
+    .picture_img img {
+        flex: 1;
+    }
+    
+}
+
+/* ====== COMMON IMPROVEMENTS FOR ALL ====== */
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Improve container responsiveness */
+.container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Ensure proper grid system */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Fix column layouts */
+.col-lg-4,
+.col-lg-5,
+.col-lg-7 {
+    padding: 10px;
+}
+
+@media (max-width: 992px) {
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-7 {
+        width: 100% !important;
+    }
+}
+
+/* Smooth transitions */
+a, button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* Better link/button focus states for accessibility */
+a:focus, button:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive typography baseline */
+@media (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 993px) {
+    html {
+        font-size: 16px;
+    }
+}
