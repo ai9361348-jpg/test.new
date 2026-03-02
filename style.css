@@ -1,32 +1,106 @@
-ul {
-    list-style: none;
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    display:inline-block;
+html body{
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
 }
 
-#header{
-    background-image: url(./Header\ BG.png);
+body {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Nav Bar */
+header{
+    height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
-    /* background-size: 100vh; */
-   
+    background-size: 100% 100%;
 
- 
-    
-  
+}
+nav{
+    padding-top: 40px;
+    position: relative;
 }
 
-#main_menu ul{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+.nav-links{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-#main_menu ul li a{
-    color: white;
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    gap: 30px;
+    transition: 0.3s ease;
+    
+}
+nav ul li a:hover{
+    color:red;
+}
+
+
+/* HIDE CHECKBOX */
+#menu-toggle {
+  display: none;
+}
+
+/* TOGGLE BUTTON */
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+/* Nav Bar End */
+
+/* Hero Section Start */
+
+#home{
+    padding-top: 198px;
+    color: #ffffff;
+    align-self: center;
+    
+}
+#home h1{
+    font-size: 76px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 664px;
+}
+#home p{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#home button{
+    padding: 10px 18px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    margin-bottom: 400px;
 }
 
 /* ========== Banner part======= */
@@ -42,6 +116,7 @@ a{
     width: 664px;
     font-weight: 700;
     color: white;
+    font-family: "Open Sans", sans-serif;
 }
 #Banner p{
     font-size: 24px;
@@ -59,59 +134,84 @@ a{
     font-weight: bold;
 }
 /* =====Featured part===== */
-#Featured{
-     padding: 100px;
-    background: rgba(245, 222, 179, 0.248);
-    
-     
+
+#Collection{
+    Padding-top: 100px;
+    Padding-bottom: 100px;
+     background-color: #EAE5E5; 
 }
-.price{
-    display: flex;
-    gap: 24px;
-    margin-top: 36px;
-    flex-wrap: wrap;
+#Collection h2{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair", serif;
+    margin-bottom: 36px;
 }
-.price .card-1{
-    border: 1px solid rgba(0, 0, 0, 0.329) ;
+
+.f-card{
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.f-card:hover{
+    background: #643EB0;
     border-radius: 20px;
 }
-.price .card-1 img{
+
+.f-card:hover h3,
+.f-card:hover p{
+    color: #fff;
+}
+
+
+.f-card::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 28%;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-radius: 0 0 15px 15px;
+    pointer-events: none;
+}
+
+
+
+.f-card img{
     width: 100%;
+    border-radius: 10px;
+    display: block;
+    padding-bottom: 18px;
 }
-.price .card-2 img{
-    width: 100%;
-}
-.price .card-3 img{
-    width: 100%;
-}
-.price .card-2{
-    border: 1px solid rgba(0, 0, 0, 0.329) ;
-    border-radius: 20px;
-}
-.price .card-3{
-    border: 1px solid rgba(0, 0, 0, 0.329) ;
-    border-radius: 20px;
-}
-.price h3 {
-    margin-top: 10px;
-    padding-left: 10px;
+
+.f-card h3{
     font-size: 26px;
-    font-weight: 600px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+    padding-left: 16px;
 }
-.price p{
-    margin-left: 10px;
+.f-card p{
     font-size: 24px;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 16px;
 }
 /* ========= trends parts =====*/
 #trend{
-    padding: 80px 50px;
+    padding: 190px;
     
 }
 #trend h3{
     text-align: center;
     font-size: 28px;
     font-weight: 700;
+    font-family: "Playfair", serif;
  
 }
 #trend p{
@@ -119,88 +219,123 @@ a{
     font-size: 16px;
     font-weight: 600;
     margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* ============ Story =========== */
 #story{
     padding: 80px 50px;
-    background: rgba(245, 222, 179, 0.163);
+    background: rgba(192, 192, 192, 0.362);
 }
 .story_heading{
-    margin-top: 100px;
+    margin-top: 150px;
+
 }
 .story_heading h2{
     font-size: 36px;
     font-weight: 700;
+    font-family: "Open Sans", sans-serif;
 }
 .story_heading p{
-    width: 587px;
+    width: 600px;
     font-size: 18px;
     margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+
 }
 
 /* ====== Craft======= */
 #carft{
-    padding: 80px 50px;
+    padding: 100px;
+    
+
+    
 }
 .craft_heading {
-    padding-left: 40px;
-    margin-top: 100px;
+    padding-right: 50px;
+    margin-top: 150px;
+
 }
 .craft_heading h2{
     font-size: 48px;
     font-weight: 700;
+    font-family: "Playfair", serif;
 }
 .craft_heading .craft_p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     width: 588px;
+    font-family: 'Poppins', sans-serif;
     margin: 20px 0 20px;
+}
+.craft_heading .craft_p2{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 /* ======= Picture ========= */
 
-#picture{
+#Lookbook{
     padding: 80px 50px;
-    background: rgba(245, 222, 179, 0.214);
+    background:rgba(192, 192, 192, 0.176);
+
 }
 .picture_heading h2{
     font-size: 36px;
     font-weight: 700;
+    font-family: "Open Sans", sans-serif;;
 }
 .picture_img{
+   
     padding: 53px 0;
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    /* justify-content: space-between; */
+    gap: 35px;
     flex-wrap: wrap;
+    /* justify-content: center; */
 }
 /* ===== Footer====== */
-#Dark{
-    padding: 60px 50px;
+#Journal{
+    padding: 100px;
     background: black;
+    
 
     
 }
 
 .dark_img{
+    width: 100%;
     padding: 55px 0;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 44px;
+    /* justify-content: center; */
 }
 .dark_heading h2{
     color: white;
     font-size: 36px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
 }
 .dark_heading p{
     color: white;
     margin-top: 20px;
     font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
+ #Contact{
+    padding: 100px;
+    background: black;
+  
+ }
 .private{
     text-align: center;
-    padding: 80px 20px;
+    /* padding: 80px 20px; */
+    margin-top: 100px;
+
 }
 .private h2 {
     color: white;
@@ -243,16 +378,3 @@ a{
     transition:0.3s;
 }
 
-.studio{
-    color: white;
-    text-align: center;
-    
-
-}
-
-.studio{
-    color: white;
-    text-align: center;
-    
-
-}

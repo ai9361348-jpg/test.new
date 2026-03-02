@@ -1,468 +1,609 @@
-/* ============================================
-   RESPONSIVE DESIGN - All Devices
-   ============================================ */
+/* ====================== RESPONSIVE CSS ====================== */
 
-/* ====== MOBILE PHONES (Extra Small) ====== */
-@media (max-width: 576px) {
-    
-    /* Navbar */
-    #main_menu ul {
-        gap: 15px !important;
-    }
-    
-    #main_menu ul li a {
-        font-size: 14px !important;
-    }
-    
-    /* Banner Section */
-    #Banner {
-        padding: 80px 20px !important;
-    }
-    
-    #Banner h1 {
-        font-size: 32px !important;
-        width: 100% !important;
-        line-height: 1.3;
-    }
-    
-    #Banner p {
-        font-size: 16px !important;
-    }
-    
-    #Banner a {
-        font-size: 14px;
-        padding: 8px 16px !important;
-    }
-    
-    /* Featured Section */
-    #Featured {
-        padding: 40px 20px !important;
-    }
-    
-    #Featured h2 {
-        font-size: 28px;
-    }
-    
-    .price {
-        display: flex;
-        flex-direction: column;
-        gap: 20px !important;
-        margin-top: 20px !important;
-    }
-    
-    .price .col-lg-4 {
-        width: 100% !important;
-    }
-    
-    .price h3 {
-        font-size: 18px !important;
-    }
-    
-    .price p {
-        font-size: 16px !important;
-    }
-    
-    /* Trend Section */
-    #trend {
-        padding: 30px 20px !important;
-    }
-    
-    #trend h3 {
-        font-size: 20px !important;
-    }
-    
-    #trend p {
-        font-size: 14px !important;
-    }
-    
-    #trend .col-lg-4 {
-        margin-bottom: 20px;
-    }
-    
-    /* Story Section */
-    #story {
-        padding: 40px 20px !important;
-    }
-    
-    .story_heading {
-        margin-top: 0 !important;
-    }
-    
-    .story_heading h2 {
-        font-size: 24px !important;
-    }
-    
-    .story_heading p {
-        width: 100% !important;
-        font-size: 14px !important;
-    }
-    
-    #story .col-lg-7,
-    #story .col-lg-5 {
-        width: 100% !important;
-        margin-bottom: 20px;
-    }
-    
-    #story img {
-        width: 100%;
-        height: auto;
-    }
-    
-    /* Craft Section */
-    #carft {
-        padding: 40px 20px !important;
-    }
-    
-    .craft_heading {
-        padding-left: 0 !important;
-        margin-top: 20px !important;
-    }
-    
-    .craft_heading h2 {
-        font-size: 24px !important;
-    }
-    
-    .craft_heading p {
-        font-size: 14px !important;
-    }
-    
-    .craft_heading .craft_p {
-        width: 100% !important;
-    }
-    
-    #carft .col-lg-5,
-    #carft .col-lg-7 {
-        width: 100% !important;
-        margin-bottom: 20px;
-    }
-    
-    #carft img {
-        width: 100%;
-        height: auto;
-    }
-    
-    /* Picture/Lookbook Section */
-    #picture {
-        padding: 40px 20px !important;
-    }
-    
-    .picture_heading h2 {
-        font-size: 24px !important;
-    }
-    
-    .picture_img {
-        padding: 20px 0 !important;
-        display: flex !important;
-        flex-direction: column;
-        gap: 15px !important;
-    }
-    
-    .picture_img img {
-        width: 100%;
-        height: auto;
-    }
-    
-    /* Dark/Footer Section */
-    #Dark {
-        padding: 40px 20px !important;
-    }
-    
-    .dark_heading h2 {
-        font-size: 24px !important;
-    }
-    
-    .dark_heading p {
-        font-size: 14px !important;
-    }
-    
-    .dark_img {
-        padding: 30px 0 !important;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .dark_img img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .private {
-        padding: 40px 20px !important;
-        text-align: center;
-    }
-    
-    .private h2 {
-        font-size: 24px !important;
-    }
-    
-    .private p {
-        font-size: 14px !important;
-    }
-    
-    .address {
-        flex-direction: column;
-        width: 100% !important;
-        max-width: 100%;
-    }
-    
-    .address button {
-        width: 100%;
-    }
-    
-    .studio {
-        font-size: 12px;
-    }
-    
-}
+/* ============== TABLET DEVICES (768px - 1024px) ============== */
+@media (max-width: 1024px) {
+  
+  /* Nav Bar */
+  nav {
+    padding-top: 30px;
+  }
 
-/* ====== TABLETS (Small to Medium) ====== */
-@media (min-width: 577px) and (max-width: 992px) {
-    
-    /* Navbar */
-    #main_menu ul {
-        gap: 30px !important;
-    }
-    
-    #main_menu ul li a {
-        font-size: 16px !important;
-    }
-    
-    /* Banner Section */
-    #Banner {
-        padding: 120px 30px !important;
-    }
-    
-    #Banner h1 {
-        font-size: 48px !important;
-        width: 100% !important;
-        line-height: 1.4;
-    }
-    
-    #Banner p {
-        font-size: 18px !important;
-    }
-    
-    /* Featured Section */
-    #Featured {
-        padding: 60px 30px !important;
-    }
-    
-    .price {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px !important;
-    }
-    
-    .price .col-lg-4 {
-        grid-column: span 1;
-    }
-    
-    .price .col-lg-4:nth-child(3) {
-        grid-column: span 2;
-    }
-    
-    .price h3 {
-        font-size: 20px !important;
-    }
-    
-    /* Trend Section */
-    #trend {
-        padding: 50px 30px !important;
-    }
-    
-    #trend h3 {
-        font-size: 24px !important;
-    }
-    
-    #trend .col-lg-4 {
-        margin-bottom: 20px;
-    }
-    
-    /* Story Section */
-    #story {
-        padding: 80px 30px !important;
-    }
-    
-    .story_heading {
-        margin-top: 50px !important;
-    }
-    
-    .story_heading h2 {
-        font-size: 32px !important;
-    }
-    
-    .story_heading p {
-        width: 100% !important;
-        font-size: 16px !important;
-    }
-    
-    /* Craft Section */
-    #carft {
-        padding: 80px 30px !important;
-    }
-    
-    .craft_heading {
-        padding-left: 30px !important;
-        margin-top: 50px !important;
-    }
-    
-    .craft_heading h2 {
-        font-size: 36px !important;
-    }
-    
-    .craft_heading .craft_p {
-        width: 100% !important;
-        font-size: 18px !important;
-    }
-    
-    /* Picture/Lookbook Section */
-    #picture {
-        padding: 80px 30px !important;
-    }
-    
-    .picture_heading h2 {
-        font-size: 32px !important;
-    }
-    
-    .picture_img {
-        padding: 40px 0 !important;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px !important;
-    }
-    
-    .picture_img img {
-        width: 100%;
-        height: auto;
-    }
-    
-    /* Dark/Footer Section */
-    #Dark {
-        padding: 60px 30px !important;
-    }
-    
-    .dark_heading h2 {
-        font-size: 32px !important;
-    }
-    
-    .dark_img {
-        padding: 40px 0 !important;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-    }
-    
-    .dark_img img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .private {
-        padding: 80px 30px !important;
-    }
-    
-    .private h2 {
-        font-size: 28px !important;
-    }
-    
-    .address {
-        width: 600px;
-        max-width: 90%;
-    }
-    
-}
+  nav ul li a {
+    font-size: 18px;
+    gap: 20px;
+  }
 
-/* ====== LARGE DEVICES (Desktop & Large Screens) ====== */
-@media (min-width: 993px) {
-    
-    /* Keep existing styles for large screens */
-    .price {
-        display: flex;
-    }
-    
-    .price .col-lg-4 {
-        flex: 1;
-    }
-    
-    .picture_img {
-        display: flex;
-        justify-content: space-between;
-        gap: 40px;
-    }
-    
-    .picture_img img {
-        flex: 1;
-    }
-    
-}
+  /* Hero Section */
+  #home {
+    padding-top: 150px;
+  }
 
-/* ====== COMMON IMPROVEMENTS FOR ALL ====== */
-
-/* Ensure images are responsive */
-img {
+  #home h1 {
+    font-size: 54px;
     max-width: 100%;
-    height: auto;
+  }
+
+  #home p {
+    font-size: 20px;
+  }
+
+  #home button {
+    padding: 10px 16px;
+    font-size: 18px;
+    margin-bottom: 300px;
+  }
+
+  /* Featured Cards */
+  #Collection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #Collection h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .f-card h3 {
+    font-size: 22px;
+  }
+
+  .f-card p {
+    font-size: 20px;
+  }
+
+  /* Trends Section */
+  #trend {
+    padding: 120px 40px;
+  }
+
+  #trend h3 {
+    font-size: 24px;
+  }
+
+  #trend p {
+    font-size: 14px;
+  }
+
+  /* Story Section */
+  #story {
+    padding: 60px 30px;
+  }
+
+  .story_heading {
+    margin-top: 100px;
+  }
+
+  .story_heading h2 {
+    font-size: 32px;
+  }
+
+  .story_heading p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* Craft Section */
+  #carft {
+    padding: 80px 40px;
+  }
+
+  .craft_heading {
+    padding-right: 30px;
+    margin-top: 100px;
+  }
+
+  .craft_heading h2 {
+    font-size: 40px;
+  }
+
+  .craft_heading .craft_p {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .craft_heading .craft_p2 {
+    font-size: 16px;
+  }
+
+  /* Picture Section */
+  #picture {
+    padding: 60px 30px;
+  }
+
+  .picture_heading h2 {
+    font-size: 32px;
+  }
+
+  .picture_img {
+    gap: 30px;
+  }
+
+  /* Dark Section */
+  #Dark {
+    padding: 80px 40px;
+  }
+
+  .dark_heading h2 {
+    font-size: 32px;
+  }
+
+  .dark_heading p {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 80px 40px;
+  }
+
+  .address {
+    width: 90%;
+  }
+}
+
+/* ============== MOBILE DEVICES (480px - 767px) ============== */
+@media (max-width: 767px) {
+  
+  /* Nav Bar */
+  nav {
+    padding-top: 20px;
+  }
+
+  .nav-links {
+    gap: 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .menu-btn {
     display: block;
-}
+  }
 
-/* Improve container responsiveness */
-.container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-}
-
-/* Ensure proper grid system */
-.row {
+  #menu-toggle:checked ~ .nav-links {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    gap: 0;
+  }
+
+  #menu-toggle:checked ~ .nav-links li {
+    padding: 15px 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* Hero Section */
+  header {
+    background-size: cover;
+  }
+
+  #home {
+    padding-top: 100px;
+  }
+
+  #home h1 {
+    font-size: 36px;
+    max-width: 100%;
+    line-height: 1.3;
+  }
+
+  #home p {
+    font-size: 16px;
+  }
+
+  #home button {
+    padding: 10px 14px;
+    font-size: 14px;
+    margin-bottom: 250px;
+  }
+
+  /* Featured Cards */
+  #Collection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  #Collection h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .featured-cards {
+    gap: 20px;
+  }
+
+  .f-card {
+    margin-bottom: 20px;
+  }
+
+  .f-card h3 {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+
+  .f-card p {
+    font-size: 16px;
+  }
+
+  .f-card img {
+    padding-bottom: 12px;
+  }
+
+  /* Trends Section */
+  #trend {
+    padding: 80px 20px;
+  }
+
+  #trend h3 {
+    font-size: 20px;
+  }
+
+  #trend p {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+
+  /* Story Section */
+  #story {
+    padding: 40px 20px;
+  }
+
+  .story_heading {
+    margin-top: 60px;
+  }
+
+  .story_heading h2 {
+    font-size: 28px;
+  }
+
+  .story_heading p {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  #story .col-lg-6 {
+    margin-bottom: 30px;
+  }
+
+  /* Craft Section */
+  #carft {
+    padding: 40px 20px;
+  }
+
+  .craft_heading {
+    padding-right: 0;
+    margin-top: 60px;
+  }
+
+  .craft_heading h2 {
+    font-size: 28px;
+  }
+
+  .craft_heading .craft_p {
+    font-size: 14px;
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .craft_heading .craft_p2 {
+    font-size: 13px;
+  }
+
+  #carft .col-lg-6 {
+    margin-bottom: 30px;
+  }
+
+  /* Picture Section */
+  #picture {
+    padding: 40px 20px;
+  }
+
+  .picture_heading h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .picture_img {
+    padding: 30px 0;
+    gap: 15px;
+  }
+
+  .picture_img img {
+    width: 100%;
+  }
+
+  /* Dark Section */
+  #Dark {
+    padding: 40px 20px;
+  }
+
+  .dark_heading h2 {
+    font-size: 28px;
+  }
+
+  .dark_heading p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .dark_img {
+    padding: 30px 0;
+    gap: 15px;
+  }
+
+  .dark_img img {
+    width: 100%;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 40px 20px;
+  }
+
+  .private {
+    margin-top: 50px;
+  }
+
+  .private h2 {
+    font-size: 24px;
+  }
+
+  .private p {
+    font-size: 14px;
+  }
+
+  .address {
+    width: 100%;
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  .address input {
+    padding: 15px 15px;
+    font-size: 14px;
+  }
+
+  .address button {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
 }
 
-/* Fix column layouts */
-.col-lg-4,
-.col-lg-5,
-.col-lg-7 {
-    padding: 10px;
+/* ============== SMALL MOBILE DEVICES (320px - 479px) ============== */
+@media (max-width: 479px) {
+  
+  /* Nav Bar */
+  nav {
+    padding-top: 15px;
+  }
+
+  .menu-btn {
+    font-size: 24px;
+  }
+
+  /* Hero Section */
+  #home {
+    padding-top: 80px;
+  }
+
+  #home h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  #home p {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  #home button {
+    padding: 8px 12px;
+    font-size: 12px;
+    margin-bottom: 200px;
+  }
+
+  /* Featured Cards */
+  #Collection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #Collection h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .f-card h3 {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .f-card p {
+    font-size: 14px;
+  }
+
+  /* Trends Section */
+  #trend {
+    padding: 60px 15px;
+  }
+
+  #trend h3 {
+    font-size: 18px;
+  }
+
+  #trend p {
+    font-size: 12px;
+  }
+
+  /* Story Section */
+  #story {
+    padding: 30px 15px;
+  }
+
+  .story_heading {
+    margin-top: 40px;
+  }
+
+  .story_heading h2 {
+    font-size: 24px;
+  }
+
+  .story_heading p {
+    font-size: 13px;
+  }
+
+  /* Craft Section */
+  #carft {
+    padding: 30px 15px;
+  }
+
+  .craft_heading h2 {
+    font-size: 24px;
+  }
+
+  .craft_heading .craft_p {
+    font-size: 13px;
+  }
+
+  .craft_heading .craft_p2 {
+    font-size: 12px;
+  }
+
+  /* Picture Section */
+  #Lookbook {
+    padding: 30px 15px;
+  }
+
+  .picture_heading h2 {
+    font-size: 24px;
+  }
+
+  /* Dark Section */
+  #Journal {
+    padding: 30px 15px;
+  }
+
+  .dark_heading h2 {
+    font-size: 24px;
+  }
+
+  .dark_heading p {
+    font-size: 13px;
+  }
+
+  /* Footer */
+  #Contact {
+    padding: 30px 15px;
+  }
+
+  .private h2 {
+    font-size: 20px;
+  }
+
+  .private p {
+    font-size: 13px;
+  }
+
+  .address {
+    width: 100%;
+  }
 }
 
-@media (max-width: 992px) {
-    .col-lg-4,
-    .col-lg-5,
-    .col-lg-7 {
-        width: 100% !important;
-    }
+/* ============== LARGE SCREENS (1025px+) ============== */
+@media (min-width: 1025px) {
+  
+  .container {
+    max-width: 1200px;
+  }
+
+  header {
+    /* background-attachment: fixed; */
+  }
+
+  #home button {
+    margin-bottom: 400px;
+  }
+
+  .story_heading p {
+    width: 600px;
+  }
+
+  .craft_heading {
+    padding-right: 50px;
+  }
+
+  .craft_heading .craft_p {
+    width: 588px;
+  }
+
+  .address {
+    width: 500px;
+  }
 }
 
-/* Smooth transitions */
-a, button {
-    transition: all 0.3s ease;
+/* ============== EXTRA LARGE SCREENS (1400px+) ============== */
+@media (min-width: 1400px) {
+  
+  .container {
+    max-width: 1320px;
+  }
+
+  header {
+    /* background-attachment: fixed; */
+  }
+
+  #home h1 {
+    max-width: 664px;
+  }
 }
 
-button:hover {
-    opacity: 0.8;
-    transform: translateY(-2px);
+/* ============== LANDSCAPE MODE ============== */
+@media (orientation: landscape) and (max-height: 600px) {
+  
+  #home {
+    padding-top: 80px;
+  }
+
+  #home h1 {
+    font-size: 32px;
+  }
+
+  #home button {
+    margin-bottom: 30px;
+  }
+
+  .story_heading {
+    margin-top: 50px;
+  }
+
+  .craft_heading {
+    margin-top: 30px;
+  }
 }
 
-/* Better link/button focus states for accessibility */
-a:focus, button:focus {
-    outline: 2px solid rgba(0, 0, 0, 0.5);
+/* ============== SMOOTH TRANSITIONS ============== */
+* {
+  transition: font-size 0.3s ease, padding 0.3s ease, margin 0.3s ease;
 }
 
-/* Responsive typography baseline */
-@media (max-width: 576px) {
-    html {
-        font-size: 14px;
-    }
+/* ============== ACCESSIBILITY ============== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
-@media (min-width: 577px) and (max-width: 992px) {
-    html {
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 993px) {
-    html {
-        font-size: 16px;
-    }
-}
